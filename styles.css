@@ -273,9 +273,22 @@ nav a:hover {
     flex-direction: column;
 }
 
-.project-image-placeholder {
+.project-media {
+    width: 100%;
+    height: 220px;
     background-color: #cbd5e0;
-    height: 200px;
+    overflow: hidden;
+}
+
+.project-img-display {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.project-image-placeholder {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -292,19 +305,26 @@ nav a:hover {
 
 .project-info h3 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
-.project-info p {
+.project-meta {
+    font-size: 0.85rem;
+    color: #718096;
     margin-bottom: 1rem;
+}
+
+.project-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
     flex-grow: 1;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem;
-    margin-bottom: 1.25rem;
+    gap: 0.35rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-tags span {
@@ -313,6 +333,7 @@ nav a:hover {
     font-size: 0.8rem;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
+    font-weight: 500;
 }
 
 .project-links .project-btn {
